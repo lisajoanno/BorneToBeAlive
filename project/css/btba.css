@@ -1,6 +1,6 @@
 .poster {
     border-style: solid;
-    border-color: white;
+    border-color: lightcoral;
     border-width: 5px;
     margin-bottom: 30px;
 }
@@ -20,4 +20,28 @@
 .my-a:hover {
     color : lightgrey;
     text-decoration: none;
+}
+
+.header-left {
+    margin-top : 9px;
+    text-align: left;
+}
+
+.header-right {
+    margin-top : 9px;
+    text-align: right;
+}
+
+.header-title {
+    margin-top : 8px;
+    text-align: center;
+    color : darkorange;
+}
+
+.header-title h4 {
+    font-weight: bold;
+}
+
+.body-title {
+    margin-bottom: 50px;
 }
