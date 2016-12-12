@@ -1,0 +1,23 @@
+.poster {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    margin-bottom: 30px;
+}
+
+.my-arrow {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.my-arrow:hover {
+    color: lightgrey;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.my-a:hover {
+    color : lightgrey;
+    text-decoration: none;
+}
