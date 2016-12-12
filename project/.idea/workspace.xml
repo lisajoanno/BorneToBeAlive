@@ -23,11 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index_list.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="385" column="38" selection-start-line="385" selection-start-column="38" selection-end-line="385" selection-end-column="38" />
+            <state relative-caret-position="255">
+              <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authentication.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/authentication.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="122" column="21" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -50,6 +60,7 @@
       <list>
         <option value="$PROJECT_DIR$/css/btba.css" />
         <option value="$PROJECT_DIR$/index_list.html" />
+        <option value="$PROJECT_DIR$/authentication.html" />
       </list>
     </option>
   </component>
@@ -123,12 +134,12 @@
       <option name="presentableId" value="Default" />
       <updated>1481531705859</updated>
       <workItem from="1481531707107" duration="8009000" />
-      <workItem from="1481558448199" duration="9203000" />
+      <workItem from="1481558448199" duration="10558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17212000" />
+    <option name="totallyTimeSpent" value="18567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -195,8 +206,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="385" column="38" selection-start-line="385" selection-start-column="38" selection-end-line="385" selection-end-column="38" />
+        <state relative-caret-position="255">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="122" column="21" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
           <folding />
         </state>
       </provider>
