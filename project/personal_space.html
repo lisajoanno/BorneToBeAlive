@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>New Age - Start Bootstrap Theme</title>
+    <title>Born To Be Alive</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +26,7 @@
 
     <!-- Theme CSS -->
     <link href="css/new-age.min.css" rel="stylesheet">
+    <link href="css/btba.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,186 +41,160 @@
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
-            </div>
+            <div class="row">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="col-sm-2 col-xs-2 navbar-header header-left">
+                    <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>-->
+                    <a class="btn btn-danger" href="./index_list.html"><i class="fa fa-user"></i> Log Out</a>
+                </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#download">Download</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#features">Features</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
+                <div class="col-sm-7 col-xs-5 header-title">
+                    <h4>Born To Be Alive</h4>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+                <div class="col-sm-3 col-xs-5 nav navbar-nav header-right">
+                    <form>
+                        <div class="input-group stylish-input-group">
+                            <input type="text" class="form-control"
+                                   placeholder="Filter"/>
+                            <span class="input-group-addon">
+                                    <span class="fa fa-search"></span>
+                            </span>
+                        </div>
+                    </form>
+                </div>
             </div>
+            <!--</div>-->
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
 
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                            <h1>New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt="">
-                                </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="download" class="download bg-primary text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">Discover what all the buzz is about!</h2>
-                    <p>Our app is available on any mobile device! Download now to get started!</p>
-                    <div class="badges">
-                        <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-                        <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="features" class="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-heading">
-                        <h2>Unlimited Features, Unlimited Fun</h2>
-                        <p class="text-muted">Check out what you can do with this app theme!</p>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt=""> </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-screen-smartphone text-primary"></i>
-                                    <h3>Device Mockups</h3>
-                                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-camera text-primary"></i>
-                                    <h3>Flexible Use</h3>
-                                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-present text-primary"></i>
-                                    <h3>Free to Use</h3>
-                                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-lock-open text-primary"></i>
-                                    <h3>Open Source</h3>
-                                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <section class="cta">
-        <div class="cta-content">
+        <section id="info1" class="collapse in">
             <div class="container">
-                <h2>Stop waiting.<br>Start building.</h2>
-                <a href="#contact" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="my-arrow">
+                            <a id="p1" href="#" class="my-arrow my-a">
+                                <i class="fa fa-arrow-left"></i> <span class="my-arrow">Previous</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 text-center perso-username">
+                        <h4><i class="fa fa-user"></i> John DOE</h4>
+                    </div>
+
+                    <div class="col-xs-3 text-right">
+                        <div class="my-arrow">
+                            <a id="n1" href="#" class="my-arrow my-a">
+                                <span class="my-arrow">Next <i class="fa fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <img src="img/plan2.jpg" class="img-responsive poster" alt="Poster n°1">
+                    </div>
+
+                    <div class="col-xs-5 col-xs-offset-1 perso-course">
+                        <h1>CEIHM</h1>
+                        <p><i class="fa fa-map-marker"></i> Bâtiment EST (E-107)</p>
+                        <p><i class="fa fa-calendar"></i> 09/01/2017</p>
+                        <p><i class="fa fa-clock-o"></i> 8h00 - 12h15</p>
+                        <p><i class="fa fa-user-secret"></i> DERY - GIBOIN</p>
+                        <p><i class="fa fa-graduation-cap"></i> SI5-group - ERG-group</p>
+                        <p><i class="fa fa-link"></i> http://atelierihm.unice.fr/enseignements/</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="overlay"></div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact bg-primary">
-        <div class="container">
-            <h2>We <i class="fa fa-heart"></i> new friends!</h2>
-            <ul class="list-inline list-social">
-                <li class="social-twitter">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li class="social-facebook">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li class="social-google-plus">
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                </li>
-            </ul>
-        </div>
-    </section>
+        <section id="info2" class="collapse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="my-arrow">
+                            <a id="p2" href="#" class="my-arrow my-a">
+                                <i class="fa fa-arrow-left"></i> <span class="my-arrow">Previous</span>
+                            </a>
+                        </div>
+                    </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2016 Start Bootstrap. All Rights Reserved.</p>
-            <ul class="list-inline">
-                <li>
-                    <a href="#">Privacy</a>
-                </li>
-                <li>
-                    <a href="#">Terms</a>
-                </li>
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+                    <div class="col-xs-6 text-center perso-username">
+                        <h4><i class="fa fa-user"></i> John DOE</h4>
+                    </div>
+
+                    <div class="col-xs-3 text-right">
+                        <div class="my-arrow">
+                            <a id="n2" href="#" class="my-arrow my-a">
+                                <span class="my-arrow">Next <i class="fa fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <img src="img/plan2.jpg" class="img-responsive poster" alt="Poster n°1">
+                    </div>
+
+                    <div class="col-xs-5 col-xs-offset-1 perso-course">
+                        <h1>Prog. WEB - Server Side</h1>
+                        <p><i class="fa fa-map-marker"></i> Bâtiment EST (E-102)</p>
+                        <p><i class="fa fa-calendar"></i> 09/01/2017</p>
+                        <p><i class="fa fa-clock-o"></i> 13h30 - 17h45</p>
+                        <p><i class="fa fa-user-secret"></i> SANDER</p>
+                        <p><i class="fa fa-graduation-cap"></i> SI5-group</p>
+                        <p><i class="fa fa-link"></i> https://moodle.polytech.unice.fr/course</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="info3" class="collapse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="my-arrow">
+                            <a id="p3" href="#" class="my-arrow my-a">
+                                <i class="fa fa-arrow-left"></i> <span class="my-arrow">Previous</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 text-center perso-username">
+                        <h4><i class="fa fa-user"></i> John DOE</h4>
+                    </div>
+
+                    <div class="col-xs-3 text-right">
+                        <div class="my-arrow">
+                            <a id="n3" href="#" class="my-arrow my-a">
+                                <span class="my-arrow">Next <i class="fa fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <img src="img/plan1.jpg" class="img-responsive poster" alt="Poster n°1">
+                    </div>
+
+                    <div class="col-xs-5 col-xs-offset-1 perso-course">
+                        <h1>Security and Privacy 3.0</h1>
+                        <p><i class="fa fa-map-marker"></i> Learning Centre</p>
+                        <p><i class="fa fa-calendar"></i> 11/01/2017</p>
+                        <p><i class="fa fa-clock-o"></i> 13h30 - 17h45</p>
+                        <p><i class="fa fa-user-secret"></i> BOUDAOUD</p>
+                        <p><i class="fa fa-graduation-cap"></i> SI5-group - IFI-group</p>
+                        <p><i class="fa fa-link"></i> http://users.polytech.unice.fr</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -232,6 +207,40 @@
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
+
+    <script>
+
+        document.getElementById("p1").addEventListener("click", function() {
+            document.getElementById('info1').className = "collapse";
+            document.getElementById('info3').className = "collapse in";
+        });
+
+        document.getElementById("p2").addEventListener("click", function() {
+            document.getElementById('info2').className = "collapse";
+            document.getElementById('info1').className = "collapse in";
+        });
+
+        document.getElementById("p3").addEventListener("click", function() {
+            document.getElementById('info3').className = "collapse";
+            document.getElementById('info2').className = "collapse in";
+        });
+
+        document.getElementById("n1").addEventListener("click", function() {
+            document.getElementById('info1').className = "collapse";
+            document.getElementById('info2').className = "collapse in";
+        });
+
+        document.getElementById("n2").addEventListener("click", function() {
+            document.getElementById('info2').className = "collapse";
+            document.getElementById('info3').className = "collapse in";
+        });
+
+        document.getElementById("n3").addEventListener("click", function() {
+            document.getElementById('info3').className = "collapse";
+            document.getElementById('info1').className = "collapse in";
+        });
+
+    </script>
 
 </body>
 

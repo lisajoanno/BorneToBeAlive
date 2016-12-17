@@ -5,6 +5,24 @@
     margin-bottom: 30px;
 }
 
+.perso-poster {
+    border-style: solid;
+    border-color: lightcoral;
+    border-width: 5px;
+}
+
+.perso-course h1 {
+    color: lightgrey;
+}
+
+.lightgrey {
+    color: lightgrey;
+}
+
+.perso-username {
+    margin-bottom: 30px;
+}
+
 .my-arrow {
     color: white;
     margin-bottom: 20px;
