@@ -1,6 +1,6 @@
 .carousel-inner > .item > img {
     margin: 0 auto;
-    width: 28em;
+    width: 23em;
 }
 
 .center {
@@ -8,4 +8,13 @@
     margin-left: auto;
     margin-right: auto;
     width: auto;
+}
+
+#compte_a_rebours {
+    text-align: center;
+    background: darkorange;
+    margin-top: 1em;
+    margin-left: 30em;
+    margin-right: 30em;
+    border-radius: 2em;
 }
