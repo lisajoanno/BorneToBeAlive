@@ -327,7 +327,7 @@
                         <h1>What's up in SophiaTech ?</h1>
                     </div>
 
-		<div class="col-xs-2 text-center">
+					<div class="col-xs-2 text-center">
                         <a href="index_carousel.html"><h1><i class="fa fa-th-large"></i></h1></a>
                     </div>
                     <a href="#page-top">
@@ -494,7 +494,20 @@
         {
             document.getElementById(prefixId + i).addEventListener("click", myScript);
         }
+    </script>
 
+    <script>
+        var sleepOnce = function(n){
+            if (n == 0) {
+                window.location.href = "./index_carousel.html";
+            } else {
+                setTimeout(function(){
+                    sleepOnce(n-1);
+                }, 1000);
+            }
+        };
+
+        sleepOnce(60);
     </script>
 
 </body>
