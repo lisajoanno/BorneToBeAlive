@@ -6,6 +6,9 @@ a {
     border-style: solid;
     border-color: lightcoral;
     border-width: 5px;
+    /*margin-bottom: 30px;*/
+}
+.poster-bottom {
     margin-bottom: 30px;
 }
 
