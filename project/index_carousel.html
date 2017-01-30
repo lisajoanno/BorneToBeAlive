@@ -102,30 +102,35 @@
                     <input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide'>
                     <input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide'>
                     <input name="cs_anchor1" id='cs_slide1_3' type="radio" class='cs_anchor slide'>
+                    <input name="cs_anchor1" id='cs_slide1_4' type="radio" class='cs_anchor slide'>
                     <input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
                     <input name="cs_anchor1" id='cs_pause1_0' type="radio" class='cs_anchor pause'>
                     <input name="cs_anchor1" id='cs_pause1_1' type="radio" class='cs_anchor pause'>
                     <input name="cs_anchor1" id='cs_pause1_2' type="radio" class='cs_anchor pause'>
                     <input name="cs_anchor1" id='cs_pause1_3' type="radio" class='cs_anchor pause'>
+                    <input name="cs_anchor1" id='cs_pause1_4' type="radio" class='cs_anchor pause'>
                         
                     <ul>
                         <div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
-                            <img src="img/cop21.jpg" style="width: 100%;">
+                            <img src="./img/cop21.jpg" style="width: 100%;"></a>
                         </div>
-                        <li class='num0 img'>
-                            <img src='img/journee_polytech_pro.jpg' alt='HTML multiple image fade  download program'  title='Bmw F-800 ' />
+						<li class='num0 img'>
+                            <img onclick="myRedirect('cop.html');" src='img/cop21.jpg' alt='HTML multiple image fade  download program'  title='Bmw F-800 ' />
                         </li>
                         <li class='num1 img'>
-                            <img src='img/polytech_by_night.jpg' alt='bootstrap carousel' title='Motorcycle jump ' />
+                            <img src='img/journee_polytech_pro.jpg' onclick="myRedirect('jpp.html');" alt='HTML multiple image fade  download program'  title='Bmw F-800 ' />
                         </li>
                         <li class='num2 img'>
-                            <img src='img/journee_nationale_de_ingenieur.jpg' alt='HTML5 image freeware navigation  autoplay with thumb' title='Stunt rider' />
+                            <img onclick="myRedirect('polynight.html');" src='img/polytech_by_night.jpg' alt='bootstrap carousel' title='Motorcycle jump ' />
                         </li>
                         <li class='num3 img'>
-                            <img src='img/boost_your_code.jpg' alt='Responsive responsive image generator slider banner with anchor' title='Dirt bike' />
+                            <img onclick="myRedirect('polynight.html');" src='img/journee_nationale_de_ingenieur.jpg' alt='HTML5 image freeware navigation  autoplay with thumb' title='Stunt rider' />
                         </li>
                         <li class='num4 img'>
-                            <img src='img/printemps_des_chercheurs.jpg' alt='Responsive responsive image generator slider banner with anchor' title='Dirt bike' />
+                            <img src='img/boost_your_code.jpg' onclick="myRedirect('byc.html');" alt='Responsive responsive image generator slider banner with anchor' title='Dirt bike' />
+                        </li>
+                        <li class='num5 img'>
+                            <img onclick="myRedirect('pdc.html');" src='img/printemps_des_chercheurs.jpg' alt='Responsive responsive image generator slider banner with anchor' title='Dirt bike' />
                         </li>
                     </ul>
                 </div>
@@ -147,6 +152,11 @@
 <script src="js/new-age.min.js"></script>
 
 <script type="text/javascript">
+	var myRedirect = function(url) 
+	{
+		console.log("Redirect: " + url);
+		document.location.href=url;
+	}
 
     function compte_a_rebours() {
         var compte_a_rebours = document.getElementById("compte_a_rebours");
