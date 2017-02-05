@@ -60,7 +60,7 @@
                     <form>
                         <div class="input-group stylish-input-group">
                             <input type="text" class="form-control"
-                                   placeholder="Filter"/>
+                                   placeholder="Filter" disabled/>
                             <span class="input-group-addon">
                                     <span class="fa fa-search"></span>
                             </span>
@@ -75,6 +75,27 @@
     </nav>
 
     <header>
+        <!-- Modals -->
+        <div id="modp1" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/plan1.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modp2" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/plan2.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section id="info1" class="collapse in">
             <div class="container">
                 <div class="row">
@@ -99,7 +120,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-6">
-                        <img src="img/plan2.jpg" class="img-responsive poster" alt="Poster n°1">
+                        <img src="img/plan2.jpg" class="img-responsive poster" alt="Poster n°1" data-toggle="modal" data-target="#modp2">
                     </div>
 
                     <div class="col-xs-5 col-xs-offset-1 perso-course">
@@ -139,7 +160,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-6">
-                        <img src="img/plan2.jpg" class="img-responsive poster" alt="Poster n°1">
+                        <img src="img/plan2.jpg" class="img-responsive poster" alt="Poster n°1" data-toggle="modal" data-target="#modp2">
                     </div>
 
                     <div class="col-xs-5 col-xs-offset-1 perso-course">
@@ -179,7 +200,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-6">
-                        <img src="img/plan1.jpg" class="img-responsive poster" alt="Poster n°1">
+                        <img src="img/plan1.jpg" class="img-responsive poster" alt="Poster n°1" data-toggle="modal" data-target="#modp1">
                     </div>
 
                     <div class="col-xs-5 col-xs-offset-1 perso-course">

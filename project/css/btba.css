@@ -26,6 +26,14 @@ a {
     color: lightgrey;
 }
 
+.btn-danger {
+    border-color: white;
+}
+
+.my-buttons {
+    margin-bottom: 30px;
+}
+
 .perso-username {
     margin-bottom: 30px;
 }
