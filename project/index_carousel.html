@@ -89,7 +89,7 @@
 				</div>
 
 				<div class="col-xs-2 text-center">
-					<a href="index_list.html"><h1><i class="fa fa-th-list"></i></h1></a>
+					<a href="index_list.html"><h1><i class="fa fa-th-large"></i></h1></a>
 				</div>
             </div>
             <br />
@@ -161,7 +161,7 @@
     function compte_a_rebours() {
         var compte_a_rebours = document.getElementById("compte_a_rebours");
         var date_actuelle = new Date();
-        var date_evenement = new Date("Jan 25 13:30:00 2017");
+        var date_evenement = new Date("Feb 25 13:30:00 2017");
         var total_secondes = (date_evenement - date_actuelle) / 1000;
         if (total_secondes < 0) {
             total_secondes = Math.abs(total_secondes); // On ne garde que la valeur absolue
