@@ -50,8 +50,12 @@
                     <a class="btn btn-danger" href="#"><i class="fa fa-user"></i> Log In</a>
                 </div>
 
-                <div class="col-sm-7 col-xs-5 header-title">
+                <div class="col-sm-3 col-xs-5 header-title">
                     <h4>Borne To Be Alive</h4>
+                </div>
+
+                <div class="col-sm-4 header-title">
+                    <h4 style="color:white" id="cdate"></h4>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -126,3 +130,19 @@
 </body>
 
 </html>
+
+<script>
+    var objToday = new Date(),
+            weekday = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'),
+            dayOfWeek = weekday[objToday.getDay()],
+            domEnder = function() { var a = objToday; if (/1/.test(parseInt((a + "").charAt(0)))) return "th"; a = parseInt((a + "").charAt(1)); return 1 == a ? "st" : 2 == a ? "nd" : 3 == a ? "rd" : "th" }(),
+            dayOfMonth = today + ( objToday.getDate() < 10) ? '0' + objToday.getDate() + domEnder : objToday.getDate() + domEnder,
+            months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'),
+            curMonth = months[objToday.getMonth()],
+            curYear = objToday.getFullYear(),
+            curHour = objToday.getHours(),
+            curMinute = objToday.getMinutes() < 10 ? "0" + objToday.getMinutes() : objToday.getMinutes();
+    var today = curHour + ":" + curMinute + " " + dayOfWeek + " " + dayOfMonth + " of " + curMonth + ", " + curYear;
+
+    document.getElementById("cdate").innerHTML = today;
+</script>
