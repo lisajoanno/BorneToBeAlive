@@ -28,6 +28,113 @@
     <!-- Theme CSS -->
     <link href="css/new-age.min.css" rel="stylesheet">
     <link href="css/btba.css" rel="stylesheet">
+
+    <style media="screen">
+
+        .my-carousel {
+            width: 420px;
+            height: 580px;
+            position: relative;
+            margin: 0 auto	0px;
+            -webkit-perspective: 1100px;
+            -moz-perspective: 1100px;
+            -o-perspective: 1100px;
+            perspective: 1100px;
+        }
+
+        #carousel {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            -webkit-transform: translateZ( -577px );
+            -moz-transform: translateZ( -577px );
+            -o-transform: translateZ( -577px );
+            transform: translateZ( -577px );
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transition: -webkit-transform 1s;
+            -moz-transition: -moz-transform 1s;
+            -o-transition: -o-transform 1s;
+            transition: transform 1s;
+        }
+
+        #carousel figure {
+            display: block;
+            position: absolute;
+            width: 372px;
+            height: 232px;
+            left: 20px;
+            top: 20px;
+            line-height: 232px;
+            font-size: 160px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        #carousel figure:nth-child(1) {
+            -webkit-transform: rotateY(   0deg ) translateZ( 577px );
+            -moz-transform: rotateY(   0deg ) translateZ( 577px );
+            -o-transform: rotateY(   0deg ) translateZ( 577px );
+            transform: rotateY(   0deg ) translateZ( 577px );
+        }
+        #carousel figure:nth-child(2) {
+            -webkit-transform: rotateY(  40deg ) translateZ( 577px );
+            -moz-transform: rotateY(  40deg ) translateZ( 577px );
+            -o-transform: rotateY(  40deg ) translateZ( 577px );
+            transform: rotateY(  40deg ) translateZ( 577px );
+        }
+        #carousel figure:nth-child(3) {
+            -webkit-transform: rotateY(  80deg ) translateZ( 577px );
+            -moz-transform: rotateY(  80deg ) translateZ( 577px );
+            -o-transform: rotateY(  80deg ) translateZ( 577px );
+            transform: rotateY(  80deg ) translateZ( 577px );
+        }
+        #carousel figure:nth-child(4) {
+            -webkit-transform: rotateY( 120deg ) translateZ( 577px );
+            -moz-transform: rotateY( 120deg ) translateZ( 577px );
+            -o-transform: rotateY( 120deg ) translateZ( 577px );
+            transform: rotateY( 120deg ) translateZ( 577px );
+        }
+        #carousel figure:nth-child(5) {
+            -webkit-transform: rotateY( 160deg ) translateZ( 577px );
+            -moz-transform: rotateY( 160deg ) translateZ( 577px );
+            -o-transform: rotateY( 160deg ) translateZ( 577px );
+            transform: rotateY( 160deg ) translateZ( 577px );
+        }
+        #carousel figure:nth-child(6) {
+            -webkit-transform: rotateY( 200deg ) translateZ( 577px );
+            -moz-transform: rotateY( 200deg ) translateZ( 577px );
+            -o-transform: rotateY( 200deg ) translateZ( 577px );
+            transform: rotateY( 200deg ) translateZ( 577px );
+        }
+        #carousel figure:nth-child(7) {
+            -webkit-transform: rotateY( 240deg ) translateZ( 577px );
+            -moz-transform: rotateY( 240deg ) translateZ( 577px );
+            -o-transform: rotateY( 240deg ) translateZ( 577px );
+            transform: rotateY( 240deg ) translateZ( 577px );
+        }
+        #carousel figure:nth-child(8) {
+            -webkit-transform: rotateY( 280deg ) translateZ( 577px );
+            -moz-transform: rotateY( 280deg ) translateZ( 577px );
+            -o-transform: rotateY( 280deg ) translateZ( 577px );
+            transform: rotateY( 280deg ) translateZ( 577px );
+        }
+        #carousel figure:nth-child(9) {
+            -webkit-transform: rotateY( 320deg ) translateZ( 577px );
+            -moz-transform: rotateY( 320deg ) translateZ( 577px );
+            -o-transform: rotateY( 320deg ) translateZ( 577px );
+            transform: rotateY( 320deg ) translateZ( 577px );
+        }
+
+        #carousel img {
+            width: 100%;
+        }
+
+    </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -55,12 +162,8 @@
                 <a class="btn btn-danger" href="./authentication.html"><i class="fa fa-user"></i> Log In</a>
             </div>
 
-            <div class="col-sm-3 col-xs-5 header-title">
+            <div class="col-sm-7 col-xs-5 header-title">
                 <h4>Borne To Be Alive</h4>
-            </div>
-
-            <div class="col-sm-4 header-title">
-                <h4 style="color:white" id="cdate"></h4>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -71,8 +174,8 @@
                         <input type="text" class="form-control"
                                placeholder="Filter" disabled/>
                         <span class="input-group-addon">
-                                <span class="fa fa-search"></span>
-                        </span>
+                                    <span class="fa fa-search"></span>
+                            </span>
                     </div>
                 </form>
             </div>
@@ -99,46 +202,19 @@
             <br />
             <div id="compte_a_rebours"></div>
             <br />
-			<div class="col-lg-3 col-lg-offset-3" style="width: 50%;">
-                <div class='csslider1 autoplay'>
-                        
-                    <input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide'>
-                    <input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide'>
-                    <input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide'>
-                    <input name="cs_anchor1" id='cs_slide1_3' type="radio" class='cs_anchor slide'>
-                    <input name="cs_anchor1" id='cs_slide1_4' type="radio" class='cs_anchor slide'>
-                    <input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
-                    <input name="cs_anchor1" id='cs_pause1_0' type="radio" class='cs_anchor pause'>
-                    <input name="cs_anchor1" id='cs_pause1_1' type="radio" class='cs_anchor pause'>
-                    <input name="cs_anchor1" id='cs_pause1_2' type="radio" class='cs_anchor pause'>
-                    <input name="cs_anchor1" id='cs_pause1_3' type="radio" class='cs_anchor pause'>
-                    <input name="cs_anchor1" id='cs_pause1_4' type="radio" class='cs_anchor pause'>
-                        
-                    <ul>
-                        <div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
-                            <img src="./img/cop21.jpg" style="width: 100%;"></a>
-                        </div>
-						<li class='num0 img'>
-                            <img onclick="myRedirect('cop.html');" src='img/cop21.jpg' alt='HTML multiple image fade  download program'  title='Bmw F-800 ' />
-                        </li>
-                        <li class='num1 img'>
-                            <img src='img/journee_polytech_pro.jpg' onclick="myRedirect('jpp.html');" alt='HTML multiple image fade  download program'  title='Bmw F-800 ' />
-                        </li>
-                        <li class='num2 img'>
-                            <img onclick="myRedirect('polynight.html');" src='img/polytech_by_night.jpg' alt='bootstrap carousel' title='Motorcycle jump ' />
-                        </li>
-                        <li class='num3 img'>
-                            <img onclick="myRedirect('polynight.html');" src='img/journee_nationale_de_ingenieur.jpg' alt='HTML5 image freeware navigation  autoplay with thumb' title='Stunt rider' />
-                        </li>
-                        <li class='num4 img'>
-                            <img src='img/boost_your_code.jpg' onclick="myRedirect('byc.html');" alt='Responsive responsive image generator slider banner with anchor' title='Dirt bike' />
-                        </li>
-                        <li class='num5 img'>
-                            <img onclick="myRedirect('pdc.html');" src='img/printemps_des_chercheurs.jpg' alt='Responsive responsive image generator slider banner with anchor' title='Dirt bike' />
-                        </li>
-                    </ul>
+            <section class="my-carousel" style="margin-top: -6em;">
+                <div id="carousel">
+                    <figure><a href="byc.html"><img src="img/boost_your_code.jpg" /></a></figure>
+                    <figure><a href="cop.html"><img src = "img/cop21.jpg" /></a></figure>
+                    <figure><a href="jni.html"><img src = "img/journee_nationale_de_ingenieur.jpg" /></a></figure>
+                    <figure><a href="jpp.html"><img src = "img/journee_polytech_pro.jpg	" /></a></figure>
+                    <figure><a href="polynight.html"><img src = "img/polytech_by_night.jpg" /></a></figure>
+                    <figure><a href="pdc.html"><img src = "img/printemps_des_chercheurs.jpg" /></a></figure>
+                    <figure><a href="byc.html"><img src = "img/boost_your_code.jpg" /></a></figure>
+                    <figure><a href="cop.html"><img src = "img/cop21.jpg" /></a></figure>
+                    <figure><a href="polynight.html"><img src = "img/polytech_by_night.jpg" /></a></figure>
                 </div>
-			</div>
+            </section>
 		</div>
     </section>
 </header>
@@ -156,7 +232,7 @@
 <script src="js/new-age.min.js"></script>
 
 <script type="text/javascript">
-	var myRedirect = function(url) 
+	var myRedirect = function(url)
 	{
 		console.log("Redirect: " + url);
 		document.location.href=url;
@@ -205,22 +281,144 @@
 
 </script>
 
+<script src="js/carousel.js"></script>
+
+<script>
+    var transformProp = Modernizr.prefixed('transform');
+
+    function Carousel3D ( el ) {
+        this.element = el;
+
+        this.rotation = 0;
+        this.panelCount = 0;
+        this.totalPanelCount = 9;
+        this.theta = 0;
+
+        this.isHorizontal = true;
+
+    }
+
+    Carousel3D.prototype.modify = function() {
+
+        var panel, angle, i;
+
+        this.panelSize = this.element[ this.isHorizontal ? 'offsetWidth' : 'offsetHeight' ];
+        this.rotateFn = this.isHorizontal ? 'rotateY' : 'rotateX';
+        this.theta = 360 / this.panelCount;
+
+        // do some trig to figure out how big the carousel
+        // is in 3D space
+        this.radius = Math.round( ( this.panelSize / 2) / Math.tan( Math.PI / this.panelCount ) );
+
+        for ( i = 0; i < this.panelCount; i++ ) {
+            panel = this.element.children[i];
+            angle = this.theta * i;
+            panel.style.opacity = 1;
+            panel.style.backgroundColor = 'hsla(' + angle + ', 100%, 50%, 0.8)';
+            // rotate panel, then push it out in 3D space
+            panel.style[ transformProp ] = this.rotateFn + '(' + angle + 'deg) translateZ(' + this.radius + 'px)';
+        }
+
+        // hide other panels
+        for (  ; i < this.totalPanelCount; i++ ) {
+            panel = this.element.children[i];
+            panel.style.opacity = 0;
+            panel.style[ transformProp ] = 'none';
+        }
+
+        // adjust rotation so panels are always flat
+        this.rotation = Math.round( this.rotation / this.theta ) * this.theta;
+
+        this.transform();
+
+    };
+
+    Carousel3D.prototype.transform = function() {
+        // push the carousel back in 3D space,
+        // and rotate it
+        this.element.style[ transformProp ] = 'translateZ(-' + this.radius + 'px) ' + this.rotateFn + '(' + this.rotation + 'deg)';
+    };
+
+    var init = function() {
+
+
+        var carousel = new Carousel3D( document.getElementById('carousel') ),
+            navButtons = document.querySelectorAll('#navigation button'),
+
+            onNavButtonClick = function( event ){
+                var increment = parseInt( event.target.getAttribute('data-increment') );
+                carousel.rotation += carousel.theta * increment * -1;
+                carousel.transform();
+            };
+        setInterval(function() {
+            carousel.rotation += carousel.theta * 1 * -1;
+            carousel.transform();
+        }, 5000);
+
+        // populate on startup
+        carousel.panelCount = parseInt( 9, 10);
+        carousel.modify();
+
+        for (var i=0; i < 2; i++) {
+            navButtons[i].addEventListener( 'click', onNavButtonClick, false);
+        }
+
+        setTimeout( function(){
+            document.body.addClassName('ready');
+        }, 0);
+
+        document.addEventListener('touchstart', handleTouchStart, false);
+        document.addEventListener('touchmove', handleTouchMove, false);
+
+        var xDown = null;
+        var yDown = null;
+
+        function handleTouchStart(evt) {
+            xDown = evt.touches[0].clientX;
+            yDown = evt.touches[0].clientY;
+        };
+
+        function handleTouchMove(evt) {
+            if ( ! xDown || ! yDown ) {
+                return;
+            }
+
+            var xUp = evt.touches[0].clientX;
+            var yUp = evt.touches[0].clientY;
+
+            var xDiff = xDown - xUp;
+            var yDiff = yDown - yUp;
+
+            if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+                if ( xDiff > 0 ) {
+                    /* left swipe */
+                    carousel.rotation += carousel.theta * 1 * -1;
+                    carousel.transform();
+                } else {
+                    /* right swipe */
+                    carousel.rotation += carousel.theta * -1 * -1;
+                    carousel.transform();
+                }
+            } else {
+                if ( yDiff > 0 ) {
+                    /* up swipe */
+                } else {
+                    /* down swipe */
+                }
+            }
+            /* reset values */
+            xDown = null;
+            yDown = null;
+        };
+
+    };
+
+
+
+    window.addEventListener( 'DOMContentLoaded', init, false);
+
+</script>
+
 </body>
 
 </html>
-
-<script>
-    var objToday = new Date(),
-            weekday = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'),
-            dayOfWeek = weekday[objToday.getDay()],
-            domEnder = function() { var a = objToday; if (/1/.test(parseInt((a + "").charAt(0)))) return "th"; a = parseInt((a + "").charAt(1)); return 1 == a ? "st" : 2 == a ? "nd" : 3 == a ? "rd" : "th" }(),
-            dayOfMonth = today + ( objToday.getDate() < 10) ? '0' + objToday.getDate() + domEnder : objToday.getDate() + domEnder,
-            months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'),
-            curMonth = months[objToday.getMonth()],
-            curYear = objToday.getFullYear(),
-            curHour = objToday.getHours(),
-            curMinute = objToday.getMinutes() < 10 ? "0" + objToday.getMinutes() : objToday.getMinutes();
-    var today = curHour + ":" + curMinute + " " + dayOfWeek + " " + dayOfMonth + " of " + curMonth + ", " + curYear;
-
-    document.getElementById("cdate").innerHTML = today;
-</script>
