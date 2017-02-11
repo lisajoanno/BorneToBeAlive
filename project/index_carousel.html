@@ -336,15 +336,16 @@
     Carousel3D.prototype.transform = function() {
         // push the carousel back in 3D space,
         // and rotate it
+		console.log(this.rotation);
         this.element.style[ transformProp ] = 'translateZ(-' + this.radius + 'px) ' + this.rotateFn + '(' + this.rotation + 'deg)';
     };
 
+	var carousel;
+	
     var init = function() {
-
-
-        var carousel = new Carousel3D( document.getElementById('carousel') ),
-            navButtons = document.querySelectorAll('#navigation button'),
-
+		console.log("init");
+        carousel = new Carousel3D( document.getElementById('carousel') );
+		var navButtons = document.querySelectorAll('#navigation button'),
             onNavButtonClick = function( event ){
                 var increment = parseInt( event.target.getAttribute('data-increment') );
                 carousel.rotation += carousel.theta * increment * -1;
@@ -353,7 +354,7 @@
         setInterval(function() {
             carousel.rotation += carousel.theta * 1 * -1;
             carousel.transform();
-        }, 5000);
+        }, 20000);
 
         // populate on startup
         carousel.panelCount = parseInt( 9, 10);
@@ -372,7 +373,7 @@
 
         var xDown = null;
         var yDown = null;
-
+		
         function handleTouchStart(evt) {
             xDown = evt.touches[0].clientX;
             yDown = evt.touches[0].clientY;
@@ -417,6 +418,34 @@
 
     window.addEventListener( 'DOMContentLoaded', init, false);
 
+	var xSwipe = 0;
+	
+	$("body").on("mousedown", 
+		function(e) {
+			if (e.which == 1) {
+				xSwipe = e.pageX;
+			}
+		});
+		
+	$("body").on("mouseup", 
+		function(e) {
+			if (e.which == 1) {
+				xSwipe -= e.pageX;				
+				if (xSwipe > 0) {
+					carousel.rotation += carousel.theta * 1 * -1;
+					carousel.transform();
+				} else {
+					carousel.rotation += carousel.theta * -1 * -1;
+					carousel.transform();
+				}
+			}
+		}
+	);
+	
+/*	$("document").ready(
+		function() {
+			carousel = new Carousel3D( document.getElementById('carousel'));
+		});*/
 </script>
 
 </body>
