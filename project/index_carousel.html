@@ -162,8 +162,12 @@
                 <a class="btn btn-danger" href="./authentication.html"><i class="fa fa-user"></i> Log In</a>
             </div>
 
-            <div class="col-sm-7 col-xs-5 header-title">
+            <div class="col-sm-2 col-xs-5 header-title">
                 <h4>Borne To Be Alive</h4>
+            </div>
+
+            <div class="col-sm-5 header-title">
+                <h4 id="cdate"></h4>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -272,7 +276,8 @@
                 secondes = '';
                 mot_seconde = '';
             }
-            compte_a_rebours.innerHTML = 'In' + ' ' + jours + ' ' + mot_jour + ' ' + heures + ' ' + mot_heure + ' ' + minutes + ' ' + mot_minute + ' ' + secondes + ' ' + mot_seconde;
+            var icon = '<i class="fa fa-clock-o"></i> ';
+            compte_a_rebours.innerHTML = icon + 'In' + ' ' + jours + ' ' + mot_jour + ' ' + heures + ' ' + mot_heure + ' ' + minutes + ' ' + mot_minute + ' ' + secondes + ' ' + mot_seconde;
         }
         var actualisation = setTimeout("compte_a_rebours();", 1000);
     }
@@ -431,7 +436,7 @@
 		function(e) {
 			if (e.which == 1) {
 				xSwipe -= e.pageX;				
-				if (xSwipe > 0) {
+				if (xSwipe >= 0) {
 					carousel.rotation += carousel.theta * 1 * -1;
 					carousel.transform();
 				} else {
@@ -448,6 +453,21 @@
 		});*/
 </script>
 
+<script>
+    var objToday = new Date(),
+            weekday = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'),
+            dayOfWeek = weekday[objToday.getDay()],
+            domEnder = function() { var a = objToday; if (/1/.test(parseInt((a + "").charAt(0)))) return "th"; a = parseInt((a + "").charAt(1)); return 1 == a ? "st" : 2 == a ? "nd" : 3 == a ? "rd" : "th" }(),
+            dayOfMonth = today + ( objToday.getDate() < 10) ? '0' + objToday.getDate() + domEnder : objToday.getDate() + domEnder,
+            months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'),
+            curMonth = months[objToday.getMonth()],
+            curYear = objToday.getFullYear(),
+            curHour = objToday.getHours(),
+            curMinute = objToday.getMinutes() < 10 ? "0" + objToday.getMinutes() : objToday.getMinutes();
+    var today = curHour + ":" + curMinute + " " + dayOfWeek + " " + dayOfMonth + " of " + curMonth + ", " + curYear;
+
+    document.getElementById("cdate").innerHTML = today;
+</script>
 </body>
 
 </html>
